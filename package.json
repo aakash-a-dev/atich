@@ -1,5 +1,5 @@
 {
-  "name": "atich",
+  "name": "@aakash-a-dev/atich",
   "version": "1.0.0",
   "description": "A JSON event-stream terminal client for WhatsApp — reads like a webhook debug tail, not a chat app.",
   "main": "dist/index.js",
