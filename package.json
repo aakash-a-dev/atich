@@ -1,0 +1,44 @@
+{
+  "name": "atich",
+  "version": "1.0.0",
+  "description": "A JSON event-stream terminal client for WhatsApp — reads like a webhook debug tail, not a chat app.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["whatsapp", "cli", "terminal", "baileys", "chat"],
+  "author": "Aakash Amod Rajput",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aakash-a-dev/atich.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aakash-a-dev/atich/issues"
+  },
+  "homepage": "https://github.com/aakash-a-dev/atich#readme",
+  "files": ["dist"],
+  "bin": {
+    "atich": "./dist/index.js"
+  },
+  "dependencies": {
+    "@hapi/boom": "^9.1.4",
+    "@whiskeysockets/baileys": "^6.7.23",
+    "chalk": "^5.6.2",
+    "figlet": "^1.11.3",
+    "pino": "^10.3.1",
+    "qrcode-terminal": "^0.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "@types/qrcode-terminal": "^0.12.2",
+    "tsx": "^4.23.1",
+    "typescript": "^7.0.2"
+  },
+  "type": "module"
+}
